@@ -1,0 +1,22 @@
+---
+server:
+  port: 80
+  contextPath: /
+---
+git:
+  repository: E:/liaison/granch2/
+  exludeRefs: HEAD
+  monitoredUsers: shelya, kyselov, domshch, sonenko, stetsyshyn, kuzbida, shypivdych, skalskyy, kroch
+datasource:
+  sampleapp:
+    url: jdbc:h2:~/test
+    username: SA
+    password:
+    driverClassName: org.h2.Driver
+    defaultSchema:
+    maxPoolSize: 10
+    hibernate:
+      hbm2ddl.method: create-drop
+      show_sql: true
+      format_sql: true
+      dialect: org.hibernate.dialect.H2Dialect
